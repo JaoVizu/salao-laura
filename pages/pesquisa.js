@@ -5,9 +5,10 @@ const Notas = [0,1,2,3,4,5]
 
 const Pesquisa = () => {
 
-  console.log(process.env.SHEET_CLIENT_EMAIL)
-  console.log(process.env.SHEET_PRIVATE_KEY.replace(/\\n/g, "\n"))
   console.log('oi')
+  console.log('email' + process.env.SHEET_CLIENT_EMAIL)
+  // console.log(process.env.SHEET_PRIVATE_KEY.replace(/\\n/g, "\n"))
+  
 
   const [form, setForm] = useState({
     nome: '',
